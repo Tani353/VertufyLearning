@@ -2,6 +2,10 @@
  /*   background-color: aqua; */
     font-family: 'poppins';
     font-weight: 700;
+    box-shadow: 0 0 10px #d3d3d3;
+    z-index: 1020;
+    position: fixed;
+    top:0;
     
     .logo {
         font-size: 1.2rem;
@@ -16,4 +20,53 @@
            }
         }
     } 
+}
+
+.carousel_main {
+    background: url(../public/images/home-banner-bg.png) no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    max-height: 1200px;
+    position: relative;
+    margin-top: 69px;
+
+    /*::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed 
+    }
+    */
+
+    .carousel_inner_main {
+        height: 559px;
+
+        .carousel_left {
+            // padding: 80px 100px;           
+        }
+    
+        .carousel_right {
+            // padding: 50px 100px;
+
+            img {
+                height: 400px;
+                width: 450px;
+            }
+        }
+    }
+}
+
+.contact_form_main {
+
+    font-family: 'poppins';
+
+    .contact_form {
+        box-shadow: 0 0 10px #d3d3d3;
+    }
 }

@@ -1,5 +1,7 @@
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const roboto_mono = Montserrat({
   subsets: ['latin'],
@@ -20,7 +22,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto_mono.className} ${poppins.className}`}>{children}</body>
+      <body className={`${roboto_mono.className} ${poppins.className}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

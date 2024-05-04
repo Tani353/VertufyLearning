@@ -8,7 +8,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
 export default function Header() {
-    const  [isClicked, setIsClicked ] = useState(true);
+    const  [isClicked, setIsClicked ] = useState(false);
 
     const handleClick = () => {
         setIsClicked(!isClicked);
@@ -40,10 +40,26 @@ export default function Header() {
                 </div>
 
                 <ul className={`${isClicked ? `flex:column` : `flex` }`}>
-                    <li className='ml-2 mr-3.5 text-base my-5 md:my-0 '>Home</li>
-                    <li className='mr-3.5 ml-2 text-base  my-5 md:my-0 '>About Us</li>
-                    <li className='mr-3.5 ml-2 text-base  my-5 md:my-0 '>Courses</li>
-                    <li className='mr-3.5 ml-2 text-base  my-5 md:my-0 '>Contact Us</li>
+                    <li className='ml-2 mr-3.5 text-base my-5 md:my-0 '>
+                        <Link href="/" className={``}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className='mr-3.5 ml-2 text-base  my-5 md:my-0 '>
+                    <Link href="/about" className={``}>
+                        About Us
+                        </Link>
+                        </li>
+                    <li className='mr-3.5 ml-2 text-base  my-5 md:my-0 '>
+                    <Link href="/courses" className={``}>
+                        Courses
+                        </Link>
+                    </li>
+                    <li className='mr-3.5 ml-2 text-base  my-5 md:my-0 '>
+                        <Link href="/contact" className={``}>
+                            Contact Us
+                        </Link>
+                    </li>
                 </ul>
                 <ul className={`${isClicked ? `flex:column` : `flex` }`}>
                     <li className=' text-base mx-3.5  my-5 md:my-0'>Login</li>
