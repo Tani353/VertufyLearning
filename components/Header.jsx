@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <header className={`${styles.header} flex justify-between px-5 py-5 w-full lg:px-20 lg:py-5 bg-white`}>
-            <Link className={styles.logo} href="#">Virtufy Learning
+            <Link className={styles.logo} href="/">Virtufy Learning
             </Link>
 
             <div className={` md:hidden `}>
