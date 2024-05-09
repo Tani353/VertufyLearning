@@ -20,7 +20,7 @@ export default function Course () {
                         <button type="button" className='text-white font-bold my-3 px-5 py-3 bg-blue-700 rounded-md border border-slate-300 hover:border-slate-400'>Get Access!</button>
                     </div>
                     <div className="right rounded md:w-6/12 relative">
-                        <Image src={img1} height={200} width={500} className={`${styles.img_course} rounded-lg md:max-h-52 w-full`} />
+                        <Image src={img1} height={200} width={500} className={`${styles.img_course} rounded-lg md:max-h-52 w-full`} alt="c-img" />
                         
                         <span className={`absolute top-0 right-0 px-2 m-1 bg-green-200 rounded-full `}>Available</span>
                         
@@ -38,7 +38,7 @@ export default function Course () {
                         <button type="button" className='text-white font-bold my-3 px-5 py-3 bg-blue-700 rounded-md border border-slate-300 hover:border-slate-400'>Get Access!</button>
                     </div>
                     <div className="right rounded md:w-6/12 relative">
-                        <Image src={img} height={200} width={500} className={`${styles.img_course} object-cover rounded-lg md:max-h-52 w-full`} />
+                        <Image src={img} height={200} width={500} alt="c-img" className={`${styles.img_course} object-cover rounded-lg md:max-h-52 w-full`} />
                         <span className={`absolute top-0 left-0 px-2 m-1 bg-green-200 rounded-full `}>Available</span>
                         
                         <span className='absolute bottom-5 left-0 px-2 m-1 bg-green-200 rounded-full '>Hindi / English</span>
